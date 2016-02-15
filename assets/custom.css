@@ -1,0 +1,597 @@
+body {
+	font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+
+h1 {
+	font-weight: 200;
+	font-size: 3em;
+}
+
+p {
+	font-size: 1.4em;
+	font-weight: 200;
+}
+
+li {
+	list-style: none;
+}
+
+.blue-text {color: rgb(44,142,191) !important;} .red-text {color: #e74c3c !important;}
+
+.button {
+	width: 180px;
+	text-align: center;
+	border-radius: 30px;
+	padding: 10px 35px;
+	border: 2px solid transparent;
+	font-weight: 500;
+	display: inline-block;
+	transition: .3s;
+}
+
+.button.wide {
+	width: 200px;
+}
+
+.button:hover {
+	text-decoration: none;
+}
+
+.redBtn {
+	background-color: #e74c3c;
+	color: #fff;	
+}
+
+.redBtn:hover {
+	color: #fff;
+	background-color: #e95d4f;
+}
+
+.transparentBtn {
+	border-color: #e74c3c;
+	background: transparent;
+	color: #e74c3c;
+}
+
+.transparentBtn:hover {
+	background-color: rgba(0,0,0,.1);
+	color: #e74c3c;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	z-index: 1;
+	padding: 30px 20px;
+	background-color: #fff;
+}
+
+.header {
+	transition: .3s;
+	border-bottom: 1px solid transparent;
+}
+
+.headerScroll {
+	border-bottom: 1px solid #ccc;
+	padding: 10px 20px;
+}
+
+header .left {
+	float: left;
+}
+
+header .left .logo {
+	width: 250px;
+	min-width: 180px;
+}
+
+header .right {
+	float: right;
+	margin-top: 6px;
+}
+
+header .right li {
+	display: inline-block;
+}
+
+header .right li a {
+	font-size: .8em;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+header .right li a:hover {
+	background-color: inherit;
+}
+
+.hamburger, .mobileMenu {
+	display: none;
+}
+
+.hamburger {
+	top: 41%;
+	cursor: pointer;
+	position: absolute;
+	right: 10px;
+	width: 20px;
+	height: 20px;
+}
+
+.hamburger .bar {
+	height: 3px;
+	background-color: #333;
+	position: relative;
+	z-index: 1;
+	transition: .3s;
+}
+
+.hamburger .bar.barTwo  {
+	top: 3px;
+	z-index: 0;
+}
+
+.hamburger .bar.barThree {
+	top: 6px;
+}
+
+.hamburger .bar.barOneEffect {
+	transform: rotate(45deg);
+	top: 6px;
+	background-color: rgb(44,142,191);
+}
+
+.hamburger .bar.barTwoEffect {
+	background-color: #fff;
+}
+
+.hamburger .bar.barThreeEffect {
+	transform: rotate(135deg);
+	top: 0px;
+	background-color: rgb(44,142,191);
+}
+
+.mobileMenu {
+	background-color: rgb(44,142,191);
+	position: absolute;
+	right: -700px;
+	top: 65px;
+	top: 101%;
+	width: 100%;
+	padding: 0 20px;
+	border-bottom: 1px solid #fff;
+	transition: .3s;
+}
+
+.mobileMenuShow {
+	display: block;
+	right: 0;
+}
+
+.mobileMenu li a {
+	color: #eee;
+	display: block;
+	padding: 10px 0;
+}
+
+.mobileMenu li a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+#contentRow {
+	margin-top: 106px;
+}
+
+.banner {
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.banner .textSec {
+	width: 50%;
+}
+
+.banner.buildTeam {
+	background-image: url(images/people-standing2.jpg);
+}
+
+.banner.buildTeam .textSec{
+	float: right;
+	padding: 50px;
+	background-color: rgba(255,255,255,.8);
+}
+
+.signup-loginRow {
+	margin-top: 30px;
+}
+
+.signup-loginRow .redBtn {
+	margin-right: 20px;
+}
+
+.signup-loginRow .button {
+	width: 40%;
+	padding: 10px 0;
+	max-width: 180px;
+	min-width: 100px;
+}
+
+.colorBand {
+	clear: both;
+}
+
+.colorBandSec {
+	text-align: center;
+}
+
+.colorBandSec a {
+	color: #fff;
+	display: block;
+	height: 125px;
+	font-size: 20px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	position: relative;
+	padding-top: 45px;
+}
+
+.colorBandSec a:hover, .colorBandSec a:hover .fa {
+	text-decoration: none;
+	
+}
+
+.colorBandSec a:hover .fa {
+	color: rgb(247,189,40)
+}
+
+.colorBandSec.enthusiasts a:hover .fa {
+	color: rgb(44,142,191);
+}
+
+
+.colorBandSec a .fa {
+	font-size: 40px;
+	transition: .2s;
+}
+
+.colorBandSec a span {
+	position: relative;
+	bottom: 8px;
+}
+
+.colorBandSec.entrepreneurs {background-color: rgb(44,142,191);}.colorBandSec.enthusiasts {background-color: rgb(247,189,40);}.colorBandSec.organizations {background-color: rgb(67,173,54);}
+
+.banner.findAProject {
+	background-image: url(images/women-at-desk.jpg);
+}
+
+.photoGrid {
+	max-width: 1000px;
+	margin: 25px auto;
+}
+
+.photoGrid .gridPhoto {
+	padding: 20px;
+}
+
+.photoGrid img {
+	width: 100%;
+}
+
+.banner.supportCommunity {
+	background-image: url(images/man-at-computer.jpg);
+	background-position: center;
+}
+
+.banner.supportCommunity .textSec {
+	float: right;
+	padding: 120px 50px;
+}
+
+.banner.aboutUs {
+	background-image: url(images/crowd-of-people.jpg);
+	background-position: center;
+}
+
+.banner.contactUs {
+	background-image: url(images/women-at-desk.jpg);
+	background-position: center;
+}
+
+.banner.aboutUs .textSec, .banner.contactUs .textSec, .contactUsSec {
+	padding: 95px 50px;
+}
+
+.banner.entrepreneurs {
+	background-image: url(images/man-looking-at-phone.jpg);
+	background-position: center;
+}
+
+.banner.enthusiasts {
+	background-image: url(images/man-wearing-vest.jpg);	
+	background-size: contain;
+}
+
+.banner.organizations {
+	background-image: url(images/glasses-pencil.jpg);	
+}
+
+.banner.findAProject .textSec, .banner.entrepreneurs .textSec, .banner.enthusiasts .textSec, .banner.organizations .textSec {
+	padding: 50px;
+}
+
+.banner.enthusiasts .textSec {
+	float: right;
+}
+
+.quote {
+	font-style: italic;
+	font-size: 1.3em;
+}
+
+.quote span {
+	font-style: normal;
+}
+
+.banner .fishbowlIs {
+	margin-top: 30px;
+}
+
+.interiorUl {
+	margin: 30px 0;
+}
+
+.interiorUl li {
+	font-size: 1.4em;
+	font-weight: 200;
+	list-style: initial;
+	line-height: 30px;
+}
+
+.locationsSec {
+	padding: 50px 20px;
+}
+
+.locationsSec .location {
+	text-align: center;
+}
+
+.locationsSec .location h3 {
+	margin: 30px 0;
+}
+
+.locationsSec .location img {
+	width: 80%;
+	min-width: 200px;
+	border: 2px solid transparent;
+	border-radius: 50%;
+}
+
+.locationsSec .location:hover img {
+	border-color: rgb(44,142,191);
+}
+
+.locationsSec .location:nth-child(2):hover img {
+	border-color: #e74c3c;
+}
+
+.locationsSec .location:last-child:hover img {
+	border-color: rgb(67,173,54);
+}
+
+.locationsSec .location p {
+	text-align: justify;
+	padding: 0 10px;
+}
+
+.quoteBar {
+	background-color: rgb(44,142,191);
+	color: #fff;
+	text-align: center;
+	padding: 15px 5px;
+}
+
+.quoteBar h2 {
+	font-weight: 300;
+	width: 80%;
+	margin: 20px auto 10px;
+}
+
+.quoteBar p {
+	font-weight: 100;
+	letter-spacing: 1px;
+}
+
+.contactUsSec .left, .contactUsSec .right {
+	padding: 0;
+}
+
+.contactUsSec .left {
+	padding-right: 20px;
+}
+
+.contactUsSec .left h3 {
+	margin-top: 0;
+}
+
+.contactUsSec .right {
+	padding-left: 20px;
+}
+
+.contactUsSec form input {
+	height: 44px;
+	margin-bottom: 20px;
+}
+
+.contactUsSec form textarea {
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.contactUsSec form .redBtn {
+	width: 40%;
+	padding: 0;
+	max-width: 180px;
+	min-width: 100px;
+	height: 40px;
+	float: right;
+}
+
+footer {
+	background-color: #f2f3f5;
+	margin: 0 -15px;
+	text-align: center;
+	padding: 30px 0;
+}
+
+.footerNav {
+	padding: 0;
+}
+
+.footerNav li {
+	display: inline-block;
+	margin: 5px 10px;
+}
+
+.footerNav li a {
+	color: #979797;
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+
+footer .copyright {
+	color: #979797;
+	font-size: 14px;
+	margin-top: 30px;
+}
+
+footer .charlie {
+	font-size: .8em;
+	color: #ccc;
+	margin: 0;
+	position: relative;
+	top: 10px;
+}
+
+footer .charlie a {
+	color: #ccc;
+	transition: .3s;
+}
+
+footer .charlie a:hover {
+	color: #333;
+}
+
+@media screen and (max-width: 991px) {
+
+	.banner.buildTeam {
+		background-size: cover;
+		background-position: center;
+	}
+
+	.banner.buildTeam .textSec, .banner.findAProject .textSec, .banner.supportCommunity .textSec, .banner.aboutUs .textSec, .banner.enthusiasts .textSec, .banner.contactUs .textSec {
+		background-color: rgba(255,255,255,.8);
+		height: 100%;
+		width: 100%;
+	}
+
+	.banner.supportCommunity {
+		background-position: inherit;
+	}
+
+	.banner.supportCommunity .textSec, .banner.aboutUs .textSec, .banner.contactUs .textSec, .contactUsSec {
+		padding: 50px;
+	}
+
+	.banner .textSec {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	header .left .logo {
+		width: 80%;
+	}
+
+	header .right {
+		display: none;
+	}
+
+	.hamburger {
+		display: block;
+	}
+
+	.banner.buildTeam {
+		background-position: inherit;
+	}
+
+	.banner.findAProject, .banner.organizations {
+		background-position: center;
+	}
+
+	.banner.enthusiasts {
+		background-size: cover;
+	}
+
+	.locationsSec .location img {
+		width: 240px;
+	}
+
+	.locationsSec .location p {
+		margin-bottom: 50px
+	}
+
+	.locationsSec .location:last-child p {
+		margin-bottom: 0;
+	}
+
+	.colorBandSec a {
+		height: 100px;
+		padding-top: 32px;
+	}
+
+	.contactUsSec .left, .contactUsSec .right {
+		padding: 0;
+	}
+
+	.contactUsSec .right {
+		margin-top: 40px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+
+	#contentRow.home {
+		margin-top: 80px;
+	}
+
+	.banner.buildTeam .textSec, .banner.findAProject .textSec, .banner.supportCommunity .textSec, .banner.aboutUs .textSec, .banner.entrepreneurs .textSec, .banner.enthusiasts .textSec, .banner.organizations .textSec, .banner.contactUs .textSec, .contactUsSec {
+		padding: 50px 20px;
+	}
+
+	.locationsSec .location {
+		padding: 0;
+	}
+
+	.footerNav li {
+		display: block;
+		margin: 10px 0;
+	}
+
+	h1 {
+		font-size: 2em;
+		font-weight: 700;
+	}
+
+	h2 {
+		font-size: 1.5em;
+		font-weight: 700;
+	}
+
+	p, .interiorUl li, .quote {
+		font-size: 1.2em;
+		font-weight: 400;
+		line-height: inherit;
+	}
+}

@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../jquery/jquery-ui.css">
+	<link rel="stylesheet" href="styles.css">
+	<script src="../jquery/external/jquery/jquery.js"></script>
+	<script src="../assets/custom.js"></script>
+	<title>Fishbowl - Dashboard</title>
+</head>
+<body>
+	<div class="container-fluid">
+		<header>
+			<div class="left">
+				<a href="">
+					<img class="logo" src="../assets/images/logo-full.png" alt="The Fishbowl">
+				</a>
+			</div>
+			<div class="right">
+				<a href="profile/individual.html">Account Profile</a>
+				<a href="../index.html" class="signOutBtn">Sign Out</a>
+			</div>
+			<div class="hamburger">
+				<div class="bar barOne"></div>
+				<div class="bar barTwo"></div>
+				<div class="bar barThree"></div>
+			</div>
+			<ul class="mobileMenu">
+				<li>
+					<a href="profile/individual.html">Account Profile</a>
+				</li>
+				<li>
+					<a href="">Contact Us</a>
+				</li>
+				<li>
+					<a href="">Feedback</a>
+				</li>
+				<li>
+					<a href="">Privacy Policy</a>
+				</li>
+				<li>
+					<a href="">Terms of Use</a>
+				</li>
+				<li>
+					<a href="../index.html">Sign Out</a>
+				</li>
+			</ul>
+		</header>
+		<div class="row contentRow">
+			<div class="blueTop"></div>
+			<div class="col-lg-3 col-md-3 col-sm-3 leftAside">
+				<div class="userBox">
+					<img class="userImg" src="../assets/images/demo-user-img.jpg">
+					<h3 class="form-group">Joe User</h3>
+				</div>
+				<div class="greyBlock searchArea form-group">
+					<div class="row form-group">
+						<div class="col-md-5">
+							<h3>Search</h3>
+						</div>
+						<div class="col-md-7">
+							<input type="submit" class="btn btnWhite" value="My Favorites">
+						</div>
+					</div>
+					<form class="leftSearchForm">
+						<input type="search" class="form-control form-group" placeholder="Name">
+						<i class="fa fa-search one"></i>
+						<input type="search" class="form-control form-group" placeholder="Location">
+						<i class="fa fa-search two"></i>
+						<input type="search" class="form-control form-group" placeholder="Key Word">
+						<i class="fa fa-search three"></i>
+						<div class="row form-group">
+							<div class="col-md-6 col-sm-6 col-xs-3 searchType">
+								<input type="checkbox" checked>
+								<label>Events</label>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-3 searchType">
+								<input type="checkbox" checked>
+								<label>People</label>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-3 searchType form-group">
+								<input type="checkbox" checked>
+								<label>Projects</label>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-3 searchType form-group">
+								<input type="checkbox" checked>
+								<label>Orgs.</label>
+							</div>
+							<div class="col-xs-12 pull-right">
+								<a href="search/results.html" class="btn btnBlue">GO FISH!</a>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="greyBlock myProjects form-group">
+					<div class="row form-group">
+						<div class="col-md-5">
+							<h3>My Projects</h3>
+						</div>
+						<div class="col-md-7">
+							<input type="submit" class="btn btnWhite" value="Create">
+						</div>
+					</div>
+					<div class="project">
+						<a href="">
+							<img src="../assets/images/agrin-logo.png" alt="Agrin Health">
+							<span>Agrin Health</span>
+						</a>
+					</div>
+					<div class="project">
+						<a href="">
+							<img src="../assets/images/sun-logo.png" alt="Project X">
+							<span>Project X</span>
+						</a>
+					</div>
+					<div class="project">
+						<a href="">
+							<img src="../assets/images/fishbowl-fish-logo.png" alt="Fishbowl">
+							<span>Fishbowl</span>
+						</a>
+					</div>
+				</div>
+				<div class="greyBlock myResources form-group">
+					<div class="row form-group">
+						<div class="col-md-5">
+							<h3>My Resources</h3>
+						</div>
+						<div class="col-md-7">
+							<input type="submit" class="btn btnWhite" value="Find">
+						</div>
+					</div>
+					<div class="project">
+						<a href="">
+							<img src="../assets/images/agrin-logo.png" alt="Agrin Health">
+							<span>Agrin Health - How to...</span>
+						</a>
+					</div>
+					<div class="project">
+						<a href="">
+							<img src="../assets/images/sun-logo.png" alt="Project X">
+							<span>Project X - Fun quiz</span>
+						</a>
+					</div>
+					<div class="project">
+						<a href="">
+							<img src="../assets/images/fishbowl-fish-logo.png" alt="Fishbowl">
+							<span>Fishbowl - Fun quiz</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-9 col-md-9 col-sm-9" id="contentPushed">
+				<div class="row">
+					<div class="col-lg-8 col-md-8 centerContent">
+						<div class="well">
+							<p><strong>Welcome, Joe.</strong> Today is going to be a great day! Check out the community's new events.</p>
+						</div>
+						<div class="fishbowlShowcase form-group scrollWrap">
+							<h3>Fishbowl Showcase</h3>
+
+							<i class="fa fa-plus-square-o plus-one"></i>
+							<i class="fa fa-minus-square-o minus-one"></i>
+
+
+							<div class="scrollBlockHoz showcaseScroll form-group">
+								<a href="" class="item one">
+									<img src="../assets/images/agrin-logo.png" alt="Agrin">
+									<span>Hot project</span>
+								</a>
+								<a href="" class="item two">
+									<img src="../assets/images/fishbowl-fish-logo.png" alt="Fishbowl">
+									<span>Hot project 2</span>
+								</a>
+								<a href="" class="item three">
+									<img src="../assets/images/sun-logo.png" alt="Sun">
+									<span>Hot project 3</span>
+								</a>
+								<a href="" class="item four">
+									<img src="../assets/images/demo-logo.png" alt="Demo">
+									<span>Hot project 4</span>
+								</a>
+								<a href="" class="item five">
+									<img src="../assets/images/demo-logo.png" alt="Demo">
+									<span>Hot project 5</span>
+								</a>
+								<a href="" class="item six">
+									<img src="../assets/images/demo-logo.png" alt="Demo">
+									<span>Hot project 6</span>
+								</a>
+								<a href="" class="item seven">
+									<img src="../assets/images/demo-logo.png" alt="Demo">
+									<span>Hot project 7</span>
+								</a>
+								<a href="" class="item eight">
+									<img src="../assets/images/demo-logo.png" alt="Demo">
+									<span>Hot project 8</span>
+								</a>
+							</div>
+						</div>
+						<div class="myEvents form-group scrollWrap">
+							<h3>My Events</h3>
+
+							<i class="fa fa-plus-square-o plus-two"></i>
+							<i class="fa fa-minus-square-o minus-two"></i>
+
+							<div class="scrollBlockHoz eventsScroll form-group">
+								<a href="" class="item nine">
+									<img src="../assets/images/abc-image-demo.png" alt="ABC">
+									<span>ABC Co. Meeting,<br> Jan 20</span>
+								</a>
+								<a href="" class="item ten">
+									<img src="../assets/images/sxsw-demo.jpg" alt="SXSW">
+									<span>SXSW Conference,<br> Jan 29</span>
+								</a>
+								<a href="" class="item eleven">
+									<img src="../assets/images/sample-logo-demo.png" alt="Demo">
+									<span>Project X Meeting,<br> Feb 2</span>
+								</a>
+								<a href="" class="item twelve">
+									<img src="../assets/images/sample-logo-demo.png" alt="Demo">
+									<span>Sample Event,<br> Feb 2</span>
+								</a>
+								<a href="" class="item thirteen">
+									<img src="../assets/images/sample-logo-demo.png" alt="Demo">
+									<span>Sample Event,<br> Feb 2</span>
+								</a>
+								<a href="" class="item fourteen">
+									<img src="../assets/images/sample-logo-demo.png" alt="Demo">
+									<span>Sample Event,<br> Feb 2</span>
+								</a>
+								<a href="" class="item fifteen">
+									<img src="../assets/images/sample-logo-demo.png" alt="Demo">
+									<span>Sample Event,<br> Feb 2</span>
+								</a>
+								<a href="" class="item sixteen">
+									<img src="../assets/images/sample-logo-demo.png" alt="Demo">
+									<span>Sample Event,<br> Feb 2</span>
+								</a>
+							</div>
+						</div>
+						<div class="myMessagesArea form-group">
+							<div class="row form-group">
+								<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+									<h3>My Messages</h3>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+									<input class="btn btnBlue pull-right compose" type="submit" value="Compose">
+								</div>
+							</div>
+							<div class="messagesControl form-group">
+								<div class="row">
+									<div class="col-lg-3 col-md-4 col-sm-4">
+										<input type="checkbox">
+										<label>Mark Read</label>
+									</div>
+									<div class="col-lg-3 col-md-4 col-sm-4">
+										<input type="checkbox">
+										<label>Mark Unread</label>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-4">
+										<input type="checkbox">
+										<label class="text-red">Delete</label>
+										<a href="" class="btn-apply">Apply</a>
+									</div>
+								</div>
+							</div>
+							<div class="vertScroll">
+								<div class="message form-group">
+									<div class="row">
+										<div class="col-lg-4 col-md-4 col-sm-4">
+											<input type="checkbox">
+											<label><a href="">Steven Jones</a></label>
+										</div>
+										<div class="col-lg-8 col-md-8 col-sm-8">
+											<a href="" class="mesgTitle">Hi!</a>
+											<p class="messageDate">Feb. 2, 2016</p>
+											<p class="msgPrev plain-text">Hi Joe, Wondering if you had time to look over the files we spoke about...</p>
+										</div>
+									</div>
+								</div>
+								<div class="message form-group">
+									<div class="row">
+										<div class="col-lg-4 col-md-4 col-sm-4">
+											<input type="checkbox">
+											<label><a href="">Marcia Ashley</a></label>
+										</div>
+										<div class="col-lg-8 col-md-8 col-sm-8">
+											<a href="" class="mesgTitle">Hi!</a>
+											<p class="messageDate">Feb. 1, 2016</p>
+											<p class="msgPrev plain-text">Hi Joe, Wondering if you had time to look over the files we spoke about...</p>
+										</div>
+									</div>
+								</div>
+								<div class="message form-group">
+									<div class="row">
+										<div class="col-lg-4 col-md-4 col-sm-4">
+											<input type="checkbox">
+											<label><a href="">Jon Smith</a></label>
+										</div>
+										<div class="col-lg-8 col-md-8 col-sm-8">
+											<a href="" class="mesgTitle">Hi!</a>
+											<p class="messageDate">Jan. 30, 2016</p>
+											<p class="msgPrev plain-text">Hi Joe, Wondering if you had time to look over the files we spoke about...</p>
+										</div>
+									</div>
+								</div>
+								<div class="message form-group">
+									<div class="row">
+										<div class="col-lg-4 col-md-4 col-sm-4">
+											<input type="checkbox">
+											<label><a href="">Michael Adams</a></label>
+										</div>
+										<div class="col-lg-8 col-md-8 col-sm-8">
+											<a href="" class="mesgTitle">Hi!</a>
+											<p class="messageDate">Jan. 30, 2016</p>
+											<p class="msgPrev plain-text">Hi Joe, Wondering if you had time to look over the files we spoke about...</p>
+										</div>
+									</div>
+								</div>
+								<div class="message form-group">
+									<div class="row">
+										<div class="col-lg-4 col-md-4 col-sm-4">
+											<input type="checkbox">
+											<label><a href="">Ann Williams</a></label>
+										</div>
+										<div class="col-lg-8 col-md-8 col-sm-8">
+											<a href="" class="mesgTitle">Hi!</a>
+											<p class="messageDate">Jan. 30, 2016</p>
+											<p class="msgPrev plain-text">Hi Joe, Wondering if you had time to look over the files we spoke about...</p>
+										</div>
+									</div>
+								</div>
+								<div class="message form-group">
+									<div class="row">
+										<div class="col-lg-4 col-md-4 col-sm-4">
+											<input type="checkbox">
+											<label><a href="">Kathrine Peterson</a></label>
+										</div>
+										<div class="col-lg-8 col-md-8 col-sm-8">
+											<a href="" class="mesgTitle">Hi!</a>
+											<p class="messageDate">Jan. 28, 2016</p>
+											<p class="msgPrev plain-text">Hi Joe, Wondering if you had time to look over the files we spoke about...</p>
+										</div>
+									</div>
+								</div>
+								<div class="message form-group">
+									<div class="row">
+										<div class="col-lg-4 col-md-4 col-sm-4">
+											<input type="checkbox">
+											<label><a href="">Steven Jones</a></label>
+										</div>
+										<div class="col-lg-8 col-md-8 col-sm-8">
+											<a href="" class="mesgTitle">Hi!</a>
+											<p class="messageDate">Jan. 23, 2016</p>
+											<p class="msgPrev plain-text">Hi Joe, Wondering if you had time to look over the files we spoke about...</p>
+										</div>
+									</div>
+								</div>
+								<div class="message form-group">
+									<div class="row">
+										<div class="col-lg-4 col-md-4 col-sm-4">
+											<input type="checkbox">
+											<label><a href="">Marcia Ashley</a></label>
+										</div>
+										<div class="col-lg-8 col-md-8 col-sm-8">
+											<a href="" class="mesgTitle">Hi!</a>
+											<p class="messageDate">Jan. 12, 2016</p>
+											<p class="msgPrev plain-text">Hi Joe, Wondering if you had time to look over the files we spoke about...</p>
+										</div>
+									</div>
+								</div>
+								<div class="message form-group">
+									<div class="row">
+										<div class="col-lg-4 col-md-4 col-sm-4">
+											<input type="checkbox">
+											<label><a href="">Jon Smith</a></label>
+										</div>
+										<div class="col-lg-8 col-md-8 col-sm-8">
+											<a href="" class="mesgTitle">Hi!</a>
+											<p class="messageDate">Jan. 12, 2016</p>
+											<p class="msgPrev plain-text">Hi Joe, Wondering if you had time to look over the files we spoke about...</p>
+										</div>
+									</div>
+								</div>
+								<div class="message form-group">
+									<div class="row">
+										<div class="col-lg-4 col-md-4 col-sm-4">
+											<input type="checkbox">
+											<label><a href="">Michael Adams</a></label>
+										</div>
+										<div class="col-lg-8 col-md-8 col-sm-8">
+											<a href="" class="mesgTitle">Hi!</a>
+											<p class="messageDate">Jan. 10, 2016</p>
+											<p class="msgPrev plain-text">Hi Joe, Wondering if you had time to look over the files we spoke about...</p>
+										</div>
+									</div>
+								</div>
+								<div class="message form-group">
+									<div class="row">
+										<div class="col-lg-4 col-md-4 col-sm-4">
+											<input type="checkbox">
+											<label><a href="">Ann Williams</a></label>
+										</div>
+										<div class="col-lg-8 col-md-8 col-sm-8">
+											<a href="" class="mesgTitle">Hi!</a>
+											<p class="messageDate">Jan. 01, 2016</p>
+											<p class="msgPrev plain-text">Hi Joe, Wondering if you had time to look over the files we spoke about...</p>
+										</div>
+									</div>
+								</div>
+								<div class="message form-group">
+									<div class="row">
+										<div class="col-lg-4 col-md-4 col-sm-4">
+											<input type="checkbox">
+											<label><a href="">Katherine Peterson</a></label>
+										</div>
+										<div class="col-lg-8 col-md-8 col-sm-8">
+											<a href="" class="mesgTitle">Hi!</a>
+											<p class="messageDate">Dec. 20, 2015</p>
+											<p class="msgPrev plain-text">Hi Joe, Wondering if you had time to look over the files we spoke about...</p>
+										</div>
+									</div>
+								</div>
+								<div class="message form-group">
+									<div class="row">
+										<div class="col-lg-4 col-md-4 col-sm-4">
+											<input type="checkbox">
+											<label><a href="">Katherine Peterson</a></label>
+										</div>
+										<div class="col-lg-8 col-md-8 col-sm-8">
+											<a href="" class="mesgTitle">Hi!</a>
+											<p class="messageDate">Dec. 20, 2015</p>
+											<p class="msgPrev plain-text">Hi Joe, Wondering if you had time to look over the files we spoke about...</p>
+										</div>
+									</div>
+								</div>
+								<div class="message form-group">
+									<div class="row">
+										<div class="col-lg-4 col-md-4 col-sm-4">
+											<input type="checkbox">
+											<label><a href="">Katherine Peterson</a></label>
+										</div>
+										<div class="col-lg-8 col-md-8 col-sm-8">
+											<a href="" class="mesgTitle">Hi!</a>
+											<p class="messageDate">Dec. 19, 2015</p>
+											<p class="msgPrev plain-text">Hi Joe, Wondering if you had time to look over the files we spoke about...</p>
+										</div>
+									</div>
+								</div>
+								<div class="message form-group">
+									<div class="row">
+										<div class="col-lg-4 col-md-4 col-sm-4">
+											<input type="checkbox">
+											<label><a href="">Katherine Peterson</a></label>
+										</div>
+										<div class="col-lg-8 col-md-8 col-sm-8">
+											<a href="" class="mesgTitle">Hi!</a>
+											<p class="messageDate">Dec. 10, 2015</p>
+											<p class="msgPrev plain-text">Hi Joe, Wondering if you had time to look over the files we spoke about...</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 rightAside">
+						<h3 class="form-group">Community News</h3>
+						<div class="row form-group keyWordRow">
+							<div class="col-md-7 col-sm-8 col-xs-7">
+								<input type="search" placeholder="Key word" class="form-control">
+								<i class="fa fa-search"></i>
+							</div>
+							<div class="col-md-5 col-sm-4 col-xs-5">
+								<input type="submit" value="Share" class="btn btn-block btnBlue shareBtn">
+							</div>
+						</div>
+						<div class="form-group newsFeedItem">
+							<h4>Following NEC</h4>
+							<p class="plain-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<p class="date">2/10/16</p>
+							<i class="fa fa-envelope rightBarEnvelope"></i>
+						</div>
+						<div class="form-group newsFeedItem">
+							<h4>Your call-in event is tomorrow</h4>
+							<p class="plain-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<p class="date">2/10/16</p>
+							<i class="fa fa-envelope rightBarEnvelope"></i>
+						</div>
+						<div class="form-group newsFeedItem">
+							<h4>Darren Hardy</h4>
+							<p class="plain-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<p class="date">2/10/16</p>
+							<i class="fa fa-envelope rightBarEnvelope"></i>
+						</div>
+						<div class="form-group newsFeedItem">
+							<h4>Ad 1</h4>
+							<p class="plain-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<p class="date">2/10/16</p>
+							<i class="fa fa-envelope rightBarEnvelope"></i>
+						</div>
+						<div class="form-group newsFeedItem">
+							<h4>Following NEC</h4>
+							<p class="plain-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<p class="date">2/10/16</p>
+							<i class="fa fa-envelope rightBarEnvelope"></i>
+						</div>
+						<div class="form-group newsFeedItem">
+							<h4>Following NEC</h4>
+							<p class="plain-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<p class="date">2/10/16</p>
+							<i class="fa fa-envelope rightBarEnvelope"></i>
+						</div>
+						<div class="form-group newsFeedItem">
+							<h4>Following NEC</h4>
+							<p class="plain-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<p class="date">2/10/16</p>
+							<i class="fa fa-envelope rightBarEnvelope"></i>
+						</div>
+						<div class="form-group newsFeedItem">
+							<h4>Following NEC <span style="color: red">LAST TEST</span></h4>
+							<p class="plain-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<p class="date">2/10/16</p>
+							<i class="fa fa-envelope rightBarEnvelope"></i>
+						</div>
+						<div class="form-group chatBox">
+							<h4>Chat</h4>
+							<input type="search" placeholder="Name" class="form-control form-group">
+							<i class="fa fa-search"></i>
+							<textarea class="form-control" placeholder="Enter message.."></textarea>
+							<div class="arrow-x">
+								<i class="fa fa-arrow-circle-up showChat"></i>
+								<i class="fa fa-times closeX hideChat"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 footerBlock terms">
+					<a href="">Terms of Use</a>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 footerBlock priv">
+					<a href="">Privacy Policy</a>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 copyrightWide">
+					<span>&copy 2016 Fishbowl, LLC</span>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 footerBlock contact">
+					<a href="">Contact Us</a>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 footerBlock feedback">
+					<a href="">Feedback</a>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 copyrightMobile">
+					<span>&copy 2016 Fishbowl, LLC</span>
+				</div>
+			</footer>
+		</div>
+		<div id="overlay"></div>
+		<div class="newMessage pop-up">
+			<h4>New Message</h4>
+			<form class="form-horizontal">
+				<div class="form-group">
+					<label class="col-sm-2 control-label">To:</label>
+					<div class="col-sm-10">
+						<input type="search" placeholder="Name" class="form-control">
+						<i class="fa fa-search"></i>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-2 control-label">Title:</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-2 control-label">Message:</label>
+					<div class="col-sm-10">
+						<textarea class="form-control"></textarea>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-12">
+						<input type="submit" value="Send" class="btn btnBlue pull-right">
+					</div>
+				</div>
+			</form>
+			<i class="fa fa-times closeMsgBox"></i>
+		</div>
+		<div class="shareSomething pop-up">
+			<h4>Share something with the Community</h4>
+			<p class="text-red">Date and website are required for events</p>
+			<form>
+				<div class="row">
+					<div class="col-sm-12 form-group">
+						<label class="checkbox-inline">
+							<input type="checkbox"> Event
+						</label>
+						<label class="checkbox-inline">
+							<input type="checkbox"> Post
+						</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3 col-xs-6 form-group">
+						<input type="text" placeholder="Date" class="form-control">
+					</div>
+					<div class="col-sm-4 col-xs-6 form-group">
+						<input type="text" placeholder="Website" class="form-control">
+					</div>
+					<div class="col-sm-4 col-xs-6 form-group">
+						<input type="text" placeholder="Upload image" class="form-control">
+					</div>
+					<div class="col-sm-1 col-xs-6 form-group">
+						<i class="fa fa-upload btnBlue"></i>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 form-group">
+						<input type="text" class="form-control" placeholder="Title">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 form-group">
+						<textarea class="form-control" placeholder="Comments"></textarea>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-xs-12 form-group">
+						<label class="checkbox-inline">
+							<input type="checkbox"> I am authorized to share this information and any uploaded images.
+						</label>
+					</div>
+					<div class="col-sm-6 col-xs-12 form-group text-right">
+						<input type="submit" value="Cancel" class="btn">
+						<input type="submit" value="Share" class="btn btnBlue">
+					</div>
+				</div>
+			</form>
+			<i class="fa fa-times closeMsgBox"></i>
+		</div>
+	</div>
+</body>

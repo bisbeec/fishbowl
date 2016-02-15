@@ -1,0 +1,879 @@
+@font-face{
+	font-family:"Eras Bold ITC";
+	src:url("http://www.myfontfree.com/data/54/e/eras-bold-itc/ERASBD.TTF");
+}
+
+body {
+	font-family: arial, sans-serif;
+}
+
+li {
+	list-style: none;
+}
+
+h3 {
+	font-weight: 600;
+	text-decoration: underline;
+}
+
+input[type=checkbox] {
+	font-size: 20px;
+}
+
+.text-red {color: rgb(223,41,39) !important;}.text-blue {color: rgb(44,142,191) !important;}.text-green {color: rgb(67,173,54) !important;}.text-yellow {color: rgb(247,189,40) !important;}
+
+.required {
+	border: 1px solid rgb(223,41,39) !important;
+}
+
+.trash-delete {
+	color: rgb(223,41,39);
+	position: absolute;
+	cursor: pointer;
+}
+
+.btnBlue {
+	background-color: rgb(44,142,191);
+	color: #fff;
+	transition: .3s;
+}
+
+.btnBlue:hover {
+	color: #fff;
+	background-color: #349cd0;
+}
+
+.btnRed {
+	background-color: rgb(223,41,39);
+	color: #fff;
+}
+
+.btnRed:hover {
+	color: #fff;
+	background-color: #B2211F;
+}
+
+.btnWhite {
+	background-color: #fff;
+	border: 1px solid #aaa;
+	color: rgb(44,142,191);
+}
+
+.btnWhite:hover {
+	border-color: rgb(44,142,191);
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	z-index: 1;
+	box-shadow: 1px 1px 3px 0px #ddd;
+	padding: 10px;
+	background-color: #fff;
+}
+
+header .left {
+	float: left;
+}
+
+header .left .logo {
+	width: 250px;
+}
+
+header .right {
+	float: right;
+	margin-top: 10px;
+}
+
+header .right .signOutBtn {
+	background-color: rgb(223,41,39);
+	color: #fff;
+	padding: 4px 8px;
+	margin-left: 10px;
+	border-radius: 5px;
+}
+
+header .right .signOutBtn:hover {
+	text-decoration: none;
+	background-color: #B2211F;
+}
+
+.mobileMenu {
+	display: none;
+}
+
+.hamburger {
+	top: 36%;
+	cursor: pointer;
+	position: absolute;
+	right: 10px;
+	width: 20px;
+	height: 20px;
+	display: none;
+}
+
+.hamburger .bar {
+	height: 3px;
+	background-color: #333;
+	position: relative;
+	z-index: 1;
+	transition: .3s;
+}
+
+.hamburger .bar.barTwo  {
+	top: 3px;
+	z-index: 0;
+}
+
+.hamburger .bar.barThree {
+	top: 6px;
+}
+
+.hamburger .bar.barOneEffect {
+	transform: rotate(45deg);
+	top: 6px;
+	background-color: rgb(44,142,191);
+}
+
+.hamburger .bar.barTwoEffect {
+	background-color: #fff;
+}
+
+.hamburger .bar.barThreeEffect {
+	transform: rotate(135deg);
+	top: 0px;
+	background-color: rgb(44,142,191);
+}
+
+.mobileMenu {
+	background-color: #ccc;
+	border-bottom: 2px solid #fff;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	top: 56px;
+	margin: 0;
+	padding: 0;
+	transition: .3s;
+	text-align: right;
+}
+
+header .mobileMenu a {
+	color: #333;
+	display: block;
+	padding: 15px 10px 15px 20px;
+	transition: .3s;
+}
+
+header .mobileMenu li a::after {
+	content: "";
+	background-color: #fff;
+	height: 1px;
+	width: 30%;
+	display: block;
+	position: absolute;
+	right: 8px;
+	top: 50px;
+}
+
+header .mobileMenu li:nth-child(2) a::after {top: 100px;}header .mobileMenu li:nth-child(3) a::after {top: 150px;}header .mobileMenu li:nth-child(4) a::after {top: 200px;}header .mobileMenu li:nth-child(5) a::after {top: 250px;}
+
+header .mobileMenu a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.blueTop {
+	 background-color: rgb(44,142,191);
+	 height: 15px;
+	 width: 100%;
+	 position: fixed;
+	 top: 65px;
+	 z-index: 1;
+	 border-bottom: 1px solid #fff;
+}
+
+.contentRow {
+	position: relative;
+	top: 66px;
+}
+
+.leftAside {
+	background-color: rgb(44,142,191);
+	position: fixed;
+	left: 0;
+	z-index: 1;
+	top: 66px;
+	height: 100%;
+	padding-top: 25px;
+	padding-bottom: 125px;
+	overflow-y: scroll;
+	white-space: nowrap;
+}
+
+/*TRYING TO FIGURE OUT WHY LEFT ASIDE DOES NOT SCROLL ALL THE WAY DOWN IN FIREFOX!!*/
+
+@-moz-document url-prefix() { 
+  .leftAside {
+  	color: purple;
+  }
+}
+
+/***********************/
+
+.leftAside .userBox {
+	text-align: center;
+}
+
+.leftAside .userBox h3 {
+	text-decoration: none;
+	color: #fff;
+}
+
+.leftAside .userBox .userImg {
+	width: 90px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	box-sizing: content-box;
+}
+
+.leftAside .btnWhite {
+	float: right;
+	margin-top: 18px;
+	padding: 3px 5px;
+}
+
+.leftAside .greyBlock {
+	background-color: #f2f2f2;
+	padding: 1px 12px;
+}
+
+.leftAside .greyBlock h3 {
+	font-size: 1.5em;
+}
+
+.leftAside .greyBlock span {
+	white-space: normal;
+}
+
+.leftAside .greyBlock .leftSearchForm {
+	position: relative;
+	clear: both;
+}
+
+.leftAside .greyBlock .leftSearchForm label {
+	font-size:.9em;
+}
+
+.leftAside .greyBlock .leftSearchForm .btnBlue {
+	float: right;
+	letter-spacing: 1px;
+	border: 1px solid #fff;
+}
+
+.leftAside .greyBlock .leftSearchForm .fa-search {
+	position: absolute;
+	font-size: 18px;
+	cursor: pointer;
+	right: 10px;
+}
+
+.leftAside .greyBlock .leftSearchForm .fa-search.one {top: 9px;}.leftAside .greyBlock .leftSearchForm .fa-search.two {top: 57px;}.leftAside .greyBlock .leftSearchForm .fa-search.three {top: 106px;}
+
+.leftAside .greyBlock input[type=search] {
+	padding-right: 35px;
+}
+
+.leftAside .greyBlock .project a {
+	display: block;
+	border-bottom: 1px solid #ddd;
+	padding: 0 10px;
+	height: 65px;
+	margin: 0 -12px;
+	display: flex;
+	align-items: center;
+}
+
+.leftAside .greyBlock .project:last-child a {
+	border-bottom: none;
+}
+
+.leftAside .greyBlock .project img {
+	width: 50px;
+	margin-right: 15px;
+}
+
+.leftAside .greyBlock .project a:hover {
+	background-color: #fff;
+	text-decoration: none;
+}
+
+#contentPushed {
+	left: 25%;
+	background-color: #fff;
+}
+
+.centerContent {
+	margin: 50px 0 0;
+}
+
+.centerContent .well {
+	border: 2px solid rgb(223,41,39);
+	background-color: #f2f2f2;
+}
+
+.scrollBlockHoz {
+	overflow-y: hidden;
+	white-space: nowrap;
+	padding: 10px;
+	background-color: rgb(44,142,191);
+	border: 1px solid rgb(44,142,191);
+	transition: .2s;
+	transition-timing-function: ease-out;
+}
+
+.scrollBlockHide {
+	height: 0;
+	padding: 0;
+	border: 0;
+	white-space: initial;
+	background-color: #fff;
+}
+
+.centerContent .scrollBlockHoz .item {
+	display: inline-block;
+	width: 175px;
+	height: 130px;
+	background-color: #fff;
+	margin-right: 15px;
+	text-align: center;
+	vertical-align: top;
+	transition: .2s;
+	border: 2px solid transparent;
+	position: relative;
+	padding-top: 10px;
+}
+
+.centerContent .scrollBlockHoz .item img {
+	width: 50%;
+}
+/* This temp fix is for different sized images. All images should eventually be same dimension..*/
+.centerContent .scrollBlockHoz .item.two img, .centerContent .scrollBlockHoz .item.eleven img, .centerContent .scrollBlockHoz .item.twelve img,.centerContent .scrollBlockHoz .item.thirteen img,.centerContent .scrollBlockHoz .item.fourteen img,.centerContent .scrollBlockHoz .item.fifteen img,.centerContent .scrollBlockHoz .item.sixteen img {
+	width: 60%;
+}
+.centerContent .scrollBlockHoz .item.three img,.centerContent .scrollBlockHoz .item.nine img {
+	width: 40%;
+}
+.centerContent .scrollBlockHoz .item.ten img {
+	width: 35%;
+}/**/
+
+.centerContent .scrollBlockHoz .item span {
+	position: absolute;
+	bottom: 10px;
+	display: block;
+	width: 100%;
+}
+
+.centerContent .scrollBlockHoz .item:hover {
+	text-decoration: none;
+	border-color: rgb(223,41,39);
+}
+
+.centerContent .scrollWrap {
+	position: relative;
+}
+
+.centerContent .scrollWrap .fa-plus-square-o, .centerContent .scrollWrap .fa-minus-square-o{
+	position: absolute;
+	top: 3px;
+	right: 0;
+	cursor: pointer;
+	font-size: 20px;
+	background-color: #fff;
+}
+
+.minusHide {
+	background-color: transparent !important;
+}
+
+.centerContent .myMessagesArea {
+	padding: 1px 12px;
+	background-color: #f2f2f2;
+	border: 1px solid #ddd;
+}
+
+.centerContent .myMessagesArea .btnBlue {
+	margin-top: 17px;
+}
+
+.centerContent .myMessagesArea .btn-apply {
+	background-color: #bbb;
+	padding: 1px 8px;
+	border-radius: 5px;
+	color: #fff;
+	left: 85px;
+	position: absolute;
+}
+
+.centerContent .myMessagesArea .btn-apply:hover {
+	text-decoration: none
+}
+
+.vertScroll {
+	overflow-y: scroll;
+	height: 375px;
+}
+
+.centerContent .myMessagesArea .message {
+	background-color: #fff;
+	padding: 10px 10px 0;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+}
+
+.centerContent .myMessagesArea .message .messageDate {
+	position: absolute;
+	top: -5px;
+	right: 16px;
+	margin: 0;
+	font-size: .9em;
+	text-decoration: underline;
+}
+
+.rightAside {
+	margin-bottom: 75px;
+	margin-top: 50px;
+	border-left: 1px solid #ccc;
+}
+
+.rightAside h3 {
+	margin-top: 0;
+}
+
+.rightAside .keyWordRow .fa-search {
+	position: absolute;
+	top: 9px;
+	right: 25px;
+	cursor: pointer;
+}
+
+input[type="search"] {
+	padding-right: 30px;
+}
+
+.rightAside .newsFeedItem {
+	padding: 10px 12px 25px;
+	background-color: #f2f2f2;
+	border: 1px solid #ddd;
+	position: relative;
+}
+
+.rightAside .newsFeedItem .date {
+	position: absolute;
+	top: 5px;
+	right: 12px;
+	font-size: .9em;
+}
+
+.rightAside .newsFeedItem .fa-envelope {
+	position: absolute;
+	right: 12px;
+	cursor: pointer;
+	font-size: 16px;
+	color: rgb(44,142,191);
+}
+
+.rightAside .chatBox {
+	position: fixed;
+	bottom: -138px;
+	right: 0;
+	width: 25%;
+	background-color: rgba(223,41,39,.9);
+	padding: 0 10px 10px;
+	border: 2px solid rgb(223,41,39);
+	border-radius: 5px;
+	color: #fff;
+	transition: .3s;
+}
+
+.rightAside .chatBox h4 {
+	margin: 10px 0;
+}
+
+.rightAside .chatBox .fa-search {
+	position: absolute;
+	top: 48px;
+	color: #333;
+	right: 18px;
+	cursor: pointer;
+}
+
+.rightAside .chatBox .arrow-x {
+	position: absolute;
+	top: 8px;
+	right: 10px;
+	cursor: pointer;
+}
+
+.rightAside .chatBox .hideArrow,.rightAside .chatBox .closeX {
+	display: none;
+}
+
+.show {
+	display: block !important;
+}
+
+.rightAside .chatBox textarea {
+	height: 100px;
+}
+
+.rightAside .show {
+	bottom: 25px;
+}
+
+footer {
+	background-color: rgb(44,142,191);
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	text-align: center;
+	padding: 10px 0;
+}
+
+footer a, footer span, footer a:hover {
+	color: #fff;
+}
+
+footer .footerBlock.terms, footer .footerBlock.priv {
+		text-align: left;
+	}
+footer .footerBlock.contact, footer .footerBlock.feedback {
+	text-align: right;
+}
+
+footer .copyrightMobile {
+	display: none;
+	margin: 15px 0 0;
+}
+
+#overlay {
+	background-color: rgba(0,0,0,.5);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	display: none;
+}
+
+/*pop-ups******/
+.pop-up {
+	background-color: #f2f2f2;
+	position: fixed;
+	width: 50%;
+	min-width: 475px;
+	max-width: 1000px;
+	max-height: 80%;
+	z-index: 100;
+	left: 25%;
+	top: 65px;
+	padding: 10px 20px;
+	overflow: scroll;
+	display: none;
+}
+.pop-up h4 {
+	text-decoration: underline;
+}
+.newMessage h4 {
+	margin-bottom: 30px;
+}
+
+.pop-up textarea {
+	max-width: 100%;
+	height: 150px;
+}
+.pop-up .fa {
+	cursor: pointer;
+}
+.shareSomething .fa-upload {
+	font-size: 20px;
+	padding: 3px;
+	border-radius: 5px;
+	margin-top: 4px;
+	float: right;
+}
+.newMessage .fa-search {
+	position: absolute;
+	right: 25px;
+	top: 10px;
+}
+.pop-up .closeMsgBox {
+	position: absolute;
+	top: 10px;
+	right: 12px;
+	cursor: pointer;
+}
+
+/*Inner Dashboard pages****/
+
+#contentPushed.dashboardInnerScreen {
+	margin-bottom: 30px;
+}
+
+#contentPushed.dashboardInnerScreen .innerBlock {
+	overflow: scroll;
+	background-color: #f2f2f2;
+    padding: 20px;
+    margin: 30px 0;
+    border: 1px solid #ddd;
+}
+
+#contentPushed.dashboardInnerScreen .innerBlock h4 {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#contentPushed.dashboardInnerScreen .innerBlock h4.subHeading {
+	text-decoration: none;
+}
+
+#contentPushed.dashboardInnerScreen .innerBlock label {
+	font-weight: normal;
+}
+
+#contentPushed.dashboardInnerScreen .innerBlock .tableWrap {
+	overflow: scroll;
+}
+
+#contentPushed.dashboardInnerScreen .innerBlock .inputNumSign {
+	width: 35px;
+}
+
+#contentPushed.dashboardInnerScreen .innerBlock .trash-delete {
+	float: right;
+	position: static;
+}
+
+#contentPushed.dashboardInnerScreen .innerBlock .resultsRow {
+	padding: 5px 0 30px;
+	margin: 0 0 15px 0;
+	border-bottom: 1px solid #ddd;
+}
+
+#contentPushed.dashboardInnerScreen .innerBlock .resultsRow.first {
+	margin-top: 30px;
+}
+
+#contentPushed.dashboardInnerScreen .innerBlock .resultsRow:last-child {
+	border: none;
+}
+
+#contentPushed.dashboardInnerScreen .innerBlock .resultsRow a {
+	display: inline-block;
+	margin: 0 40px 0 0;
+}
+
+#contentPushed.dashboardInnerScreen .innerBlock .resultsRow img {
+	width: 100px;
+	height: 100px;
+	background-color: #fff;
+	border-radius: 50%;
+	border: 2px solid rgb(44,142,191);
+}
+
+#contentPushed.dashboardInnerScreen .innerBlock .resultsRow span {
+	display: block;
+	text-align: center;
+}
+
+/*ON/OFF SWITCH*/
+.onoffswitch {
+    position: relative; width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 1px solid #ddd; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    color: white;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: rgb(44,142,191); color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #fff; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 18px; margin: 6px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 56px;
+    border: 2px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+
+
+/**********************************/
+
+@media screen and (max-width: 991px) {
+	.leftAside .btnWhite {
+		float: none;
+		margin-top: 0;
+	}
+
+	.rightAside {
+		border: none;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.leftAside {
+		position: static;
+		padding-bottom: 25px;
+	}
+
+	.leftAside .btnWhite {
+		float: right;
+		margin-top: -40px;
+	}
+
+	#contentPushed {
+		left: auto;
+		margin-bottom: 80px;
+	}
+
+	#contentPushed.dashboardInnerScreen {
+		margin-bottom: 75px;
+	}
+
+	#contentPushed.dashboardInnerScreen .innerBlock {
+		margin: 0;
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+
+	.centerContent .myMessagesArea .message .messageDate {
+		top: -30px;
+	}
+
+	.rightAside {
+		margin-bottom: 0;
+	}
+
+	.rightAside .chatBox {
+		width: 250px;
+		bottom: -104px;
+	}
+
+	.rightAside .show {
+		bottom: 60px;
+	}
+
+	.blueTop, footer .copyrightWide {
+		display: none;
+	}
+
+	footer .copyrightMobile {
+		display: block;
+	}
+	.pop-up {
+		width: 100%;
+		height: 100%;
+		top: 60px;
+		bottom: 0;
+		left: 0;
+		min-width: initial;
+		max-height: 90%;
+	}
+
+	.shareSomething .fa-upload {
+		float: none;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	header .left .logo {
+		width: 200px;
+	}
+	header .right, footer .footerBlock {
+		display: none;
+	}
+
+	header .hamburger {
+		display: block;
+	}
+
+	.contentRow {
+		top: 57px;
+	}
+
+	#contentPushed.dashboardInnerScreen {
+		margin-bottom: 40px
+	}
+
+	.rightAside .chatBox {
+		width: 100%;
+		bottom: -138px;
+	}
+
+	.rightAside .show {
+		bottom: 25px;
+	}
+
+	.leftAside .greyBlock .leftSearchForm .btnBlue {
+		width: 100%;
+		float: none;
+	}
+
+	footer .copyrightMobile {
+		margin: 0;
+	}
+
+	.pop-up {
+		top: 56px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	h3 {
+		font-size: 1.5em;
+	}
+
+	.greyBlock .searchType {
+	 	width: 50%;
+	 }
+
+	 .centerContent .myMessagesArea .message .messageDate {
+	 	position: static;
+	 }
+
+	.centerContent .myMessagesArea .message .msgPrev {
+		font-style: italic;
+	}
+}

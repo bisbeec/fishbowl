@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="jquery/jquery-ui.css">
+	<link rel="stylesheet" href="assets/custom.css">
+	<script src="jquery/external/jquery/jquery.js"></script>
+	<title>Fishbowl - Contact Us</title>
+</head>
+<body>
+	<div class="container-fluid">
+		<header class="header">
+			<div class="left">
+				<a href="index.html">
+					<img class="logo" src="assets/images/logo-full.png" alt="The Fishbowl">
+				</a>
+			</div>
+			<ul class="nav right">
+				<li>
+					<a href="index.html">HOME</a>
+				</li>
+				<li>
+					<a href="about.html">ABOUT</a>
+				</li>
+				<li>
+					<a href="membership.html">MEMBERSHIP</a>
+				</li>
+				<li>
+					<a href="contactus.html">CONTACT US</a>
+				</li>
+				<li>
+					<a href="dashboard/index.html" target="_blank">LOG IN</a>
+				</li>
+			</ul>
+			<div class="hamburger">
+				<div class="bar barOne"></div>
+				<div class="bar barTwo"></div>
+				<div class="bar barThree"></div>
+			</div>
+			<ul class="mobileMenu">
+				<li>
+					<a href="index.html">HOME</a>
+				</li>
+				<li>
+					<a href="about.html">ABOUT</a>
+				</li>
+				<li>
+					<a href="membership.html">MEMBERSHIP</a>
+				</li>
+				<li>
+					<a href="contactus.html">CONTACT US</a>
+				</li>
+				<li>
+					<a href="dashboard/index.html" target="_blank">LOG IN</a>
+				</li>
+			</ul>
+		</header>
+		<div id="contentRow">
+			<div class="row banner contactUs">
+				<div class="textSec">
+					<h1 class="blue-text">Contact Us</h1>
+					<p>The Fishbowl is your community. Questions, comments or just want to let everyone know about a great event coming up... Let us know what's on your mind!!</p>
+				</div>
+			</div>
+			<div class="row contactUsSec">
+				<div class="col-lg-7 col-md-7 col-sm-7 left">
+					<h3>BECOME A FOUNDING MEMBER!</h3>
+					<p>The Fishbowl is currently in Beta testing and for a limited time only, we are offering Founding Member subscriptions. Founding Members (including Beta testers) shall receive 10% off their membership subscription for 3 years, free tickets to the Nashville Premier Launch party in March, a Special Invitation to join The Fishbowl Ambassadors Club, and VIP access to upcoming events for The Fishbowl. Beta testers receive an additional discount off this year's membership and special pre-release access.</p>
+					<p>If you are interested in becoming a Beta tester and/or Founding Member, please contact us and we will provide more information on this amazing new community for Entrepreneurs and start-ups.</p>
+					<p>JOIN THE FISHBOWL TODAY!</p>
+				</div>
+				<div class="col-lg-5 col-md-5 col-sm-5 right">
+					<form>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Name">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Message Title">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Email Address">
+						</div>
+						<div class="form-group">
+							<textarea class="form-control" placeholder="Message"></textarea>
+						</div>
+						<div class="form-group">
+							<input type="submit" class="button redBtn" value="SUBMIT">
+						</div>
+					</form>
+				</div>
+				
+			</div>
+			<div class="row quoteBar">
+				<h2>"We created The Fishbowl because there are so many great people and ideas that just need a little help finding each other. Together the community will accomplish amazing things!"</h2>
+				<p>- K. Thomas, Co-Founder</p>
+			</div>
+			<footer>
+				<ul class="footerNav">
+					<li>
+						<a href="index.html">HOME</a>
+					</li>
+					<li>
+						<a href="membership.html">MEMBERSHIP</a>
+					</li>
+					<li>
+						<a href="termsofuse.html">TERMS OF USE</a>
+					</li>
+					<li>
+						<a href="privacypolicy.html">PRIVACY POLICY</a>
+					</li>
+					<li>
+						<a href="contactus.html">CONTACT US</a>
+					</li>
+					<li>
+						<a href="dashboard/index.html" target="_blank">LOG IN</a>
+					</li>
+				</ul>
+				<p class="copyright">Copyright &copy 2016 Fishbowl, LLC</p>
+				<p class="charlie">Website by <a href="http://charliebisbee.com/" target="_blank">Charlie Bisbee Web Development</a></p>
+			</footer>
+		</div>
+	</div>
+	<script>
+	$(window).scroll(function() {    
+		    var scrollDown = $(window).scrollTop();
+
+		    if (scrollDown >= 50) {
+		        $(".header").addClass("headerScroll");
+		    }
+		});
+
+		$(window).scroll(function() {    
+		    var scrollUp = $(window).scrollTop();
+
+		    if (scrollUp <= 50) {
+		        $(".header").removeClass("headerScroll");
+		    }
+		});
+
+		$(function() {
+			$(".hamburger").click(function() {
+				$(".mobileMenu").toggleClass("mobileMenuShow");
+			});
+		});
+
+		$(function() {
+			$(".hamburger").click(function() {
+				$(".barOne").toggleClass("barOneEffect");
+			});
+		});
+
+		$(function() {
+			$(".hamburger").click(function() {
+				$(".barTwo").toggleClass("barTwoEffect");
+			});
+		});
+
+		$(function() {
+			$(".hamburger").click(function() {
+				$(".barThree").toggleClass("barThreeEffect");
+			});
+		});
+	</script>
+</body>
+</html>

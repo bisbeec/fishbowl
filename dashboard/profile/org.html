@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../../jquery/jquery-ui.css">
+	<link rel="stylesheet" href="../styles.css">
+	<script src="../../jquery/external/jquery/jquery.js"></script>
+	<script src="../../assets/custom.js"></script>
+	<title>Fishbowl - Dashboard</title>
+</head>
+<body>
+	<div class="container-fluid">
+		<header>
+			<div class="left">
+				<a href="">
+					<img class="logo" src="../../assets/images/logo-full.png" alt="The Fishbowl">
+				</a>
+			</div>
+			<div class="right">
+				<a href="">Account Profile</a>
+				<a href="../../index.html" class="signOutBtn">Sign Out</a>
+			</div>
+			<div class="hamburger">
+				<div class="bar barOne"></div>
+				<div class="bar barTwo"></div>
+				<div class="bar barThree"></div>
+			</div>
+			<ul class="mobileMenu">
+				<li>
+					<a href="">Account Profile</a>
+				</li>
+				<li>
+					<a href="">Contact Us</a>
+				</li>
+				<li>
+					<a href="">Feedback</a>
+				</li>
+				<li>
+					<a href="">Privacy Policy</a>
+				</li>
+				<li>
+					<a href="">Terms of Use</a>
+				</li>
+				<li>
+					<a href="../../index.html">Sign Out</a>
+				</li>
+			</ul>
+		</header>
+		<div class="row contentRow">
+			<div class="blueTop"></div>
+			<div class="col-lg-3 col-md-3 col-sm-3 leftAside">
+				<div class="userBox">
+					<img class="userImg" src="../../assets/images/demo-user-img.jpg">
+					<h3 class="form-group">Joe User</h3>
+				</div>
+				<div class="greyBlock searchArea form-group">
+					<div class="row form-group">
+						<div class="col-md-5">
+							<h3>Search</h3>
+						</div>
+						<div class="col-md-7">
+							<input type="submit" class="btn btnWhite" value="My Favorites">
+						</div>
+					</div>
+					<form class="leftSearchForm">
+						<input type="search" class="form-control form-group" placeholder="Name">
+						<i class="fa fa-search one"></i>
+						<input type="search" class="form-control form-group" placeholder="Location">
+						<i class="fa fa-search two"></i>
+						<input type="search" class="form-control form-group" placeholder="Key Word">
+						<i class="fa fa-search three"></i>
+						<div class="row form-group">
+							<div class="col-md-6 col-sm-6 col-xs-3 searchType">
+								<input type="checkbox" checked>
+								<label>Events</label>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-3 searchType">
+								<input type="checkbox" checked>
+								<label>People</label>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-3 searchType form-group">
+								<input type="checkbox" checked>
+								<label>Projects</label>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-3 searchType form-group">
+								<input type="checkbox" checked>
+								<label>Orgs.</label>
+							</div>
+							<div class="col-xs-12 pull-right">
+								<a href="../search/results.html" class="btn btnBlue">GO FISH!</a>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="greyBlock myProjects form-group">
+					<div class="row form-group">
+						<div class="col-md-5">
+							<h3>My Projects</h3>
+						</div>
+						<div class="col-md-7">
+							<input type="submit" class="btn btnWhite" value="Create">
+						</div>
+					</div>
+					<div class="project">
+						<a href="">
+							<img src="../../assets/images/agrin-logo.png" alt="Agrin Health">
+							<span>Agrin Health</span>
+						</a>
+					</div>
+					<div class="project">
+						<a href="">
+							<img src="../../assets/images/sun-logo.png" alt="Project X">
+							<span>Project X</span>
+						</a>
+					</div>
+					<div class="project">
+						<a href="">
+							<img src="../../assets/images/fishbowl-fish-logo.png" alt="Fishbowl">
+							<span>Fishbowl</span>
+						</a>
+					</div>
+				</div>
+				<div class="greyBlock myResources form-group">
+					<div class="row form-group">
+						<div class="col-md-5">
+							<h3>My Resources</h3>
+						</div>
+						<div class="col-md-7">
+							<input type="submit" class="btn btnWhite" value="Find">
+						</div>
+					</div>
+					<div class="project">
+						<a href="">
+							<img src="../../assets/images/agrin-logo.png" alt="Agrin Health">
+							<span>Agrin Health - How to...</span>
+						</a>
+					</div>
+					<div class="project">
+						<a href="">
+							<img src="../../assets/images/sun-logo.png" alt="Project X">
+							<span>Project X - Fun quiz</span>
+						</a>
+					</div>
+					<div class="project">
+						<a href="">
+							<img src="../../assets/images/fishbowl-fish-logo.png" alt="Fishbowl">
+							<span>Fishbowl - Fun quiz</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="col-lg-9 col-md-9 col-sm-9 dashboardInnerScreen" id="contentPushed">
+				<div class="innerBlock">
+					<h4>Member Profile</h4>
+					<p class="text-red">Information in the red boxes is required to save changes.</p>
+					<form>
+						<div class="row">
+							<div class="col-md-6 col-sm-6 col-xs-6 form-group">
+								<input type="text" class="form-control" placeholder="Customer ID">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 col-sm-6 col-xs-12 form-group">
+								<input type="text" class="form-control required" placeholder="Company Name">
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-6 form-group">
+								<input type="text" class="form-control required" placeholder="Date Founded">
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-6 form-group">
+								<input type="password" class="form-control required" placeholder="Password">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 col-sm-6 col-xs-6 form-group">
+								<input type="text" class="form-control" placeholder="DBA">
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-6 form-group">
+								<input type="text" class="form-control required" placeholder="Company website">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 col-sm-12 col-xs-12 form-group">
+								<input type="text" class="form-control required" placeholder="Industry / Industries">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4 col-sm-4 col-xs-4 form-group">
+								<input type="text" class="form-control required" placeholder="Stage">
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4 form-group">
+								<input type="text" class="form-control" placeholder="Annual Revenue">
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4 form-group">
+								<input type="text" class="form-control" placeholder="# Employees">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3 col-sm-3 col-xs-12 form-group">
+								<label class="checkbox-inline">
+									<input type="checkbox"> Minority ownded
+								</label>
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-12 form-group">
+								<label class="checkbox-inline">
+									<input type="checkbox"> Non-profit
+								</label>
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-6 form-group">
+								<input type="text" class="form-control" placeholder="Non-profit ID#">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<label>Main Business Address:</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3 col-sm-3 col-xs-12 form-group">
+								<input type="text" class="form-control required" placeholder="Address">
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-4 form-group">
+								<input type="text" class="form-control required" placeholder="City">
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-4 form-group">
+								<input type="text" class="form-control required" placeholder="State">
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-4 form-group">
+								<input type="text" class="form-control required" placeholder="Zip">
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-7 form-group">
+								<a href="">Add location</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<label>Main Company Contact - Fishbowl Account Administrator:</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3 col-sm-3 col-xs-4 form-group">
+								<input type="text" class="form-control required" placeholder="First Name">
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-4 form-group">
+								<input type="text" class="form-control required" placeholder="Last Name">
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-4 form-group">
+								<input type="text" class="form-control required" placeholder="Title">
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-6 form-group">
+								<input type="text" class="form-control required" placeholder="Email">
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-6 form-group">
+								<input type="text" class="form-control required" placeholder="Phone">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3 col-sm-3 col-xs-12 form-group">
+								<input type="text" class="form-control required" placeholder="Address">
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-4 form-group">
+								<input type="text" class="form-control required" placeholder="City">
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-4 form-group">
+								<input type="text" class="form-control required" placeholder="State">
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-4 form-group">
+								<input type="text" class="form-control required" placeholder="Zip">
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-7 form-group">
+								<a href="">Add contact</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-6 col-md-6 form-group">
+								<textarea class="form-control" placeholder="Company Overview"></textarea>
+							</div>
+							<div class="col-lg-6 col-md-6 form-group">
+								<textarea class="form-control required" placeholder="Company Products and Services (enter at least 1)"></textarea>
+							</div>
+						</div>
+
+
+						<div class="row">
+							<div class="col-md-6 col-sm-12 form-group">
+								<label class="checkbox-inline">
+									<input type="checkbox"> I attest that this information is true and accurate
+								</label>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6 form-group">
+								<input type="submit" class="btn btnBlue btn-block" value="Preview">
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6 form-group">
+								<input type="submit" class="btn btnBlue btn-block" value="Save Changes">
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<div class="innerBlock">
+					<h4>Account Status and Billing</h4>
+					<p class="text-red">Information in the red boxes is required to save changes.</p>
+					<form>
+						<div class="row">
+							<div class="col-md-4 col-sm-4 form-group">
+								<label>Account Type</label>
+								<select class="form-control">
+									<option></option>
+									<option></option>
+								</select>
+							</div>
+							<div class="col-md-4 col-sm-4 form-group">
+								<label>Account Status</label>
+								<input type="text" class="form-control">
+							</div>
+							<div class="col-md-4 col-sm-4 form-group">
+								<label>Balance</label>
+								<input type="text" class="form-control" placeholder="$">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4 col-sm-4 form-group">
+								<label>Member as of</label>
+								<input type="text" class="form-control">
+							</div>
+							<div class="col-md-4 col-sm-4 form-group">
+								<label>Renews on</label>
+								<input type="text" class="form-control">
+							</div>
+							<div class="col-md-4 col-sm-4 form-group">
+								<label>Auto-renewal</label>
+								<div class="onoffswitch">
+								    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+								    <label class="onoffswitch-label" for="myonoffswitch">
+								        <span class="onoffswitch-inner"></span>
+								        <span class="onoffswitch-switch"></span>
+								    </label>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 form-group">
+								<label class="checkbox-inline">
+									<input type="checkbox"> Card on file
+								</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-2 col-sm-4 col-xs-6 form-group">
+								<label>Last 4 digits</label>
+								<input type="text" class="form-control">
+							</div>
+							<div class="col-md-2 col-sm-4 col-xs-6 form-group">
+								<label>Exp. date</label>
+								<input type="text" class="form-control">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 form-group">
+								<label class="checkbox-inline">
+									<input type="checkbox"> Add or update card
+								</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4 col-sm-4 col-xs-6 form-group">
+								<input type="text" class="form-control required" placeholder="Name on card">
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-6 form-group">
+								<input type="text" class="form-control required" placeholder="Card number">
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-6 form-group">
+								<input type="text" class="form-control required" placeholder="Exp. date">
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-6 form-group">
+								<input type="text" class="form-control required" placeholder="CCV">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 form-group">
+								<input typpe="submit" value="Save Changes" class="btn btnBlue">
+							</div>
+						</div>
+<!--<BR> HERE!!!!-->	<br>
+						<div class="row">
+							<div class="col-md-12">
+								<h4 class="subHeading">Purchase History</h4>
+							</div>
+						</div>
+						<div class="row purchasedItem">
+							<div class="col-md-12 form-group tableWrap">
+								<table class="table table-striped">
+									<thead>
+										<tr>
+											<th colspan="3">
+												<input type="checkbox">
+												<label><strong>Check all</strong></label>
+											</th>
+											<th class="text-right">
+												<input type="submit" value="Print History" class="btn btnWhite">
+											</th>
+										</tr>
+										<tr>
+											<th>
+											</th>
+											<th>
+												<label><strong>Date Purchased</strong></label>
+											</th>
+											<th class="text-right">
+												<label><strong>Item Desc</strong></label>
+											</th>
+											<th class="text-right">
+												<label><strong>Amount Paid</strong></label>
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<input type="checkbox">
+											</td>
+											<td>
+												<label>10/23/15</label>
+											</td>
+											<td class="text-right">
+												<label>Item description</label>
+											</td>
+											<td class="text-right">
+												<label>$150</label>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<input type="checkbox">
+											</td>
+											<td>
+												<label>10/23/15</label>
+											</td>
+											<td class="text-right">
+												<label>Item description</label>
+											</td>
+											<td class="text-right">
+												<label>$150</label>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<input type="checkbox">
+											</td>
+											<td>
+												<label>10/23/15</label>
+											</td>
+											<td class="text-right">
+												<label>Item description</label>
+											</td>
+											<td class="text-right">
+												<label>$150</label>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<input type="checkbox">
+											</td>
+											<td>
+												<label>10/23/15</label>
+											</td>
+											<td class="text-right">
+												<label>Item description</label>
+											</td>
+											<td class="text-right">
+												<label>$150</label>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<input type="checkbox">
+											</td>
+											<td>
+												<label>10/23/15</label>
+											</td>
+											<td class="text-right">
+												<label>Item description</label>
+											</td>
+											<td class="text-right">
+												<label>$150</label>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<input type="submit" value="Cancel Membership" class="btn btnRed">
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<div class="innerBlock">
+					<h4>Advertising Management</h4>
+					<form>
+						<div class="row">
+							<div class="col-md-12">
+								<label>
+									You have
+									<input type="text" placeholder="#" class="inputNumSign">
+									advertisements available on your account
+								</label>
+							</div>
+							<div class="col-md-6 form-group">
+								<input type="submit" value="Purchase More" class="btn btnWhite">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 form-group">
+								<div class="form-group">
+									<label>Current Advertisements</label>
+									<i class="fa fa-trash trash-delete"></i>
+									<textarea class="form-control" placeholder="Content currently displayed"></textarea>
+								</div>
+								<div class="form-group">
+									<label></label>
+									<i class="fa fa-trash trash-delete"></i>
+									<textarea class="form-control" placeholder="Content currently displayed"></textarea>
+								</div>
+							</div>
+							<div class="col-md-6 form-group">
+								<label>Create New</label>
+								<a href="" class="pull-right">Post</a>
+								<textarea class="form-control" placeholder="Content to be displayed"></textarea>
+							</div>
+						</div>
+					</form>
+				</div>
+
+			</div>
+
+			
+			<footer>
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 footerBlock terms">
+					<a href="">Terms of Use</a>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 footerBlock priv">
+					<a href="">Privacy Policy</a>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 copyrightWide">
+					<span>&copy 2016 Fishbowl, LLC</span>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 footerBlock contact">
+					<a href="">Contact Us</a>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 footerBlock feedback">
+					<a href="">Feedback</a>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 copyrightMobile">
+					<span>&copy 2016 Fishbowl, LLC</span>
+				</div>
+			</footer>
+		</div>
+	</div>
+</body>
