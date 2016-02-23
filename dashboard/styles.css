@@ -452,7 +452,7 @@ header .mobileMenu a:hover {
 	margin-top: 0;
 }
 
-.rightAside .keyWordRow .fa-search {
+.fa-search {
 	position: absolute;
 	top: 9px;
 	right: 25px;
@@ -600,12 +600,13 @@ footer .copyrightMobile {
 .pop-up .fa {
 	cursor: pointer;
 }
-.shareSomething .fa-upload {
+.fa-upload {
 	font-size: 20px;
 	padding: 3px;
 	border-radius: 5px;
 	margin-top: 4px;
 	float: right;
+	cursor: pointer;
 }
 .newMessage .fa-search {
 	position: absolute;
@@ -675,20 +676,60 @@ footer .copyrightMobile {
 
 #contentPushed.dashboardInnerScreen .innerBlock .resultsRow a {
 	display: inline-block;
-	margin: 0 40px 0 0;
-}
-
-#contentPushed.dashboardInnerScreen .innerBlock .resultsRow img {
-	width: 100px;
-	height: 100px;
-	background-color: #fff;
-	border-radius: 50%;
-	border: 2px solid rgb(44,142,191);
+	margin: 0 40px 10px 0;
 }
 
 #contentPushed.dashboardInnerScreen .innerBlock .resultsRow span {
 	display: block;
 	text-align: center;
+}
+
+#contentPushed.dashboardInnerScreen .innerBlock .lookingFor, #contentPushed.dashboardInnerScreen .innerBlock .locatedIn {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+#contentPushed.dashboardInnerScreen .innerBlock .indivResultsBottomSec .project {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #333;
+	padding: 10px 5px;
+	border-bottom: 1px solid #ddd;
+}
+
+#contentPushed.dashboardInnerScreen .innerBlock .indivResultsBottomSec .project:last-child {
+	border-bottom: none;
+}
+
+img.imgSmallCircle {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: 2px solid rgb(44,142,191);
+	background-color: #fff;
+}
+
+#contentPushed.dashboardInnerScreen .innerBlock .indivResultsBottomSec .project img.imgSmallCircle {
+	margin-right: 15px;
+}
+
+
+#contentPushed.dashboardInnerScreen .innerBlock .indivResultsBottomSec:last-child {
+	border-left: 1px solid #ddd;
+}
+
+#contentPushed.dashboardInnerScreen .innerBlock .myProjects {
+	border-bottom: 1px solid #ddd;
+	padding-top: 10px;
+}
+
+.purchaseMore {
+	white-space: nowrap;
+}
+
+.conditionalPull-right {
+	float: right;
 }
 
 /*ON/OFF SWITCH*/
@@ -739,6 +780,7 @@ footer .copyrightMobile {
 }
 
 
+
 /**********************************/
 
 @media screen and (max-width: 991px) {
@@ -782,6 +824,11 @@ footer .copyrightMobile {
 		top: -30px;
 	}
 
+	#contentPushed.dashboardInnerScreen .innerBlock .indivResultsBottomSec:last-child {
+		border: none;
+		margin-top: 25px;
+	}
+
 	.rightAside {
 		margin-bottom: 0;
 	}
@@ -812,7 +859,7 @@ footer .copyrightMobile {
 		max-height: 90%;
 	}
 
-	.shareSomething .fa-upload {
+	.shareSomething .fa-upload,.conditionalPull-right {
 		float: none;
 	}
 }

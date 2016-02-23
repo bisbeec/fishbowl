@@ -299,7 +299,12 @@ header .right li a:hover {
 	background-position: center;
 }
 
-.banner.aboutUs .textSec, .banner.contactUs .textSec, .contactUsSec {
+.banner.login {
+	background-image: url(images/man-speaking-crowd.jpg);
+	background-position: center;
+}
+
+.banner.aboutUs .textSec, .banner.contactUs .textSec, .contactUsSec, .banner.login .textSec {
 	padding: 95px 50px;
 }
 
@@ -429,9 +434,15 @@ header .right li a:hover {
 	margin-bottom: 20px;
 }
 
+.forgotPasswordText {
+	position: absolute;
+	right: 0;
+	bottom: -25px;
+}
+
 .contactUsSec form .redBtn {
 	width: 40%;
-	padding: 0;
+	padding: 8px 0;
 	max-width: 180px;
 	min-width: 100px;
 	height: 40px;
@@ -557,6 +568,10 @@ footer .charlie a:hover {
 
 	.contactUsSec .right {
 		margin-top: 40px;
+	}
+
+	.forgotPasswordText {
+		bottom: -50px;
 	}
 }
 
